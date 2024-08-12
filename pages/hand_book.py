@@ -174,9 +174,6 @@ st.markdown(
 
 ###### 這是第六大標題
 
-  ```
-
-  ### Streamlit 程式技巧筆記
 
 ---
 
@@ -200,6 +197,11 @@ st.markdown(
   ```
 
 - **`st.markdown()`**: 用於顯示支持 Markdown 語法的內容，可以進行文字格式化、添加連結和代碼塊等。  
+
+* **粗體文字**
+* *斜體文字*
+* [連結](https://www.example.com)
+
 
   ```python
   st.markdown(
