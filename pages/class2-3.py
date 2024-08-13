@@ -14,3 +14,31 @@ for i in range(2, 10):
 # range(2, 11, 3) 會產生 2, 5, 8
 for i in range(2, 11, 3):
     print(i)
+
+
+# list 的 append 加入到列表的最後面
+L = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+L.append(11)  # 把 11 加入到列表的最後面
+print(L)
+
+
+# list 的 移除
+# 1. 使用 remove ，可以移除指定的元素
+L = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3]
+L.remove(3)  # 移除第一個 3
+# 代表remove 會從頭開始找，找到第一個符合的元素，就會移除
+# 如果想要移除所有符合的元素，可以用迴圈
+
+for i in L:
+    if i == 3:
+        L.remove(i)
+print(L)
+
+# 2. 使用 pop ，可以移除指定index的元素
+L = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+L.pop(0)  # 移除第一個元素
+L.pop(-1)  # 移除最後一個元素
+L.pop()  # 移除最後一個元素
+print(L)
+# pop會移除指定的index的元素，如果index是負數，會從最後一個元素開始移除
+# 如果不指定index，就會移除最後一個元素
