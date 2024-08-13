@@ -1,7 +1,8 @@
 import streamlit as st
 
-st.markdown(
-    """
+with st.expander("Class1 課程筆記"):
+    st.markdown(
+        """
 ### Python 程式技巧筆記
 
 ---
@@ -228,4 +229,4 @@ st.markdown(
 這些筆記涵蓋了程式中的主要技巧和概念，適合用作學習或回顧時的參考。
 
 """
-)
+    )
