@@ -16,6 +16,12 @@ for f in files_name:  # 逐一讀取所有的.md檔案
     # 用with 就可以避免忘記關閉檔案的問題
     with open(f"{folderPath}/{f}", "r", encoding="utf-8") as file:
         # 開啟檔案後可以做很多事情，這裡我們指讀取檔案內容
+
+        # 如果不使用with，則需要先開啟檔案，然後讀取內容，最後關閉檔案
+        # flie = open (f"{folderPath}/{f}", "r", encoding="utf-8")
+        # content = file.read()
+        # flie.close()
+
         content = file.read()
     with st.expander(f[:-3]):  # 使用expender可以展開內容，同時標題去掉最後三個字(.md)
         st.markdown(content)  # 將檔案內容顯示在網頁上
