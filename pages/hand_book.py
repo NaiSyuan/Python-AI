@@ -22,6 +22,19 @@ for f in files_name:  # 逐一讀取所有的.md檔案
         # content = file.read()
         # flie.close()
 
-        content = file.read()
+        # "r"（檔案開啟模式）：
+        # "r" 是 open() 函數的參數之一，用來指定檔案的開啟模式。
+        # "r" 代表「讀取模式」（read mode），表示你只想讀取檔案的內容，而不會對檔案進行寫入或修改。
+        # 如果檔案不存在，使用 "r" 模式會導致 FileNotFoundError 錯誤。
+        # 其他檔案開啟模式還包括 "w"（寫入模式）、"a"（追加模式）、"b"（二進位模式），等等。
+
+        # read()（檔案讀取方法）：
+        # read() 是檔案物件的方法，用來從已開啟的檔案中讀取內容。
+        # read() 會讀取檔案中的所有內容，並將其返回為一個字串。如果檔案很大，這可能會消耗大量記憶體。
+        # 除了 read()，還有其他的讀取方法，例如 readline() 用來逐行讀取，readlines() 用來讀取檔案的所有行並返回一個列表。
+
+        # 當你使用 "r" 模式打開檔案後，你可以使用 read() 方法來讀取檔案的內容。
+
+        content = file.read()  # 讀取檔案內容
     with st.expander(f[:-3]):  # 使用expender可以展開內容，同時標題去掉最後三個字(.md)
         st.markdown(content)  # 將檔案內容顯示在網頁上
