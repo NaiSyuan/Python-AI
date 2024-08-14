@@ -1,5 +1,5 @@
 [theme]
-primaryColor="#FFA500" // 橘色，陽光活力
-backgroundColor="#F0FFF0" // 淡綠色，清新自然
-secondaryBackgroundColor="#E0FFFF" // 淡藍色，清涼
-textColor="#000000" // 黑色，對比強烈
+primaryColor="#FFA500" 
+backgroundColor="#F0FFF0" 
+secondaryBackgroundColor="#E0FFFF" 
+textColor="#000000" 
