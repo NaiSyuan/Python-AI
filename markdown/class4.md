@@ -1,4 +1,4 @@
-#### 1. 字典 (Dictionary)
+# 1. 字典 (Dictionary)
 
 - **字典概述**:  
   - 字典（`dict`）是一種使用鍵值對（key-value pair）來存儲數據的數據結構。
@@ -102,7 +102,7 @@
     print(len(grade_avg))  # 輸出科目數量: 3
     ```
 
-#### 2. 購物商城範例 (Streamlit)
+# 2. 購物商城範例 (Streamlit)
 
 - **建立基本界面並加載圖片**:
 
@@ -171,7 +171,7 @@
       main()
   ```
 
-#### 3. 函數 (Function)
+# 3. 函數 (Function)
 
 - **函數定義與參數傳遞**:
 
