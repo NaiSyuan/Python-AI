@@ -9,7 +9,7 @@ files_name = []  # 新增一個空的list，用來存放.md檔案
 for f in files:  # 逐一檢查所有檔案，看看是否以.md結尾
     if f.endswith(".md"):  # 如果是.md檔
         files_name.append(f)  # 將檔案名稱加入list中
-
+files_name.sort()  # 排序
 
 for f in files_name:  # 逐一讀取所有的.md檔案
     # 用with open()讀取檔案內容並存到file變數裡面，讀取模式為r，檔案編碼為utf-8
