@@ -54,3 +54,18 @@ def set_background(png_file, width=25, position="right bottom", opacity=1):
         % bin_str
     )
     st.markdown(page_bg_img, unsafe_allow_html=True)
+
+
+def load_openai_api() -> str:
+    """
+    加載 OpenAI API 的 key
+    Returns:
+    - str: OpenAI API key
+    Raises:
+    - RuntimeError: 如果找不到 API key
+    """
+    openai_api_key = st.secrets.get("openai_api_key")
+    if not openai_api_key:
+        st.error("找不到 OpenAI API key，請設置環境變數 OPENAI_API_KEY")
+        st.stop()
+    return openai_api_key
