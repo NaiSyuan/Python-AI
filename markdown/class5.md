@@ -110,9 +110,9 @@ def hello(name: str):
 
 ---
 
-### Streamlit 應用範例
+### OPEN AI 結合 Streamlit 應用範例
 
-#### 1. 基本對話框與訊息處理
+#### 1. 基本對話框與對話
 
 ```python
 import streamlit as st
