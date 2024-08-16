@@ -1,5 +1,8 @@
 import streamlit as st
 import os
+from utils import set_background  # 從utils.py只匯入set_background函式
+
+set_background("bgimage/ntutcdlogo.png", 10, "left bottom")
 
 folderPath = "markdown"  # 設定資料夾路徑
 files = os.listdir(folderPath)  # 取得資料夾內所有檔案
